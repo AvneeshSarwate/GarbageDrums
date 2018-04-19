@@ -1,6 +1,6 @@
 inlets = 1;
 outlets = 1;
-
+ 
 var numStates = 4;
 var model = new Array(numStates);
 for(var i = 0; i < numStates; i++){
@@ -13,7 +13,7 @@ for(var i = 0; i < numStates; i++){
 
 var lastHit = 0;
 var lastHitWasManual = false;
-
+ 
 function sum(row){
 	var accum = 0;
 	for(var i = 0; i < row.length; i++){
@@ -21,7 +21,7 @@ function sum(row){
 	}
 	return accum;
 }
-
+ 
 function modelStep(state){
 	var row = model[state];
 	var rand = Math.random();

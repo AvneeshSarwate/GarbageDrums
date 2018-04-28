@@ -2,6 +2,7 @@
 
 #define Pin1 9
 #define Pin2 10
+#define Pin 9
 int inByte = 0;
 char buffer[40];
 int index = 0;
@@ -17,6 +18,8 @@ void setup()
 void loop()
 {
   
+
+
   index = 0;
   do
   {
@@ -27,27 +30,26 @@ void loop()
   value = atoi(buffer);  //Value sent from Max  
   delay(10);
   
-  if (value == 768+4){
+  if (value == 768){
     digitalWrite(Pin1, LOW);
   }
   
-  if (value == 769+4){
+  if (value == 769){
     digitalWrite(Pin1, HIGH);
   }
 
-  if (value == 770+4){
+  if (value == 770){
     digitalWrite(Pin2, LOW);
   }
   
-  if (value == 771+4){
+  if (value == 771){
     digitalWrite(Pin2, HIGH);
   }
+
 //  delay(500);
 //  digitalWrite(Pin, HIGH);
 //  delay(500);
 //  digitalWrite(Pin, LOW);
-//  
-  
 }
 
 

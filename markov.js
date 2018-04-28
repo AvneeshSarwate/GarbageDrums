@@ -1,6 +1,6 @@
 inlets = 1;
 outlets = 1;
-
+ 
 var numStates = 4;
 var model = new Array(numStates);
 for(var i = 0; i < numStates; i++){
